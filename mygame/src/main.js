@@ -1,13 +1,4 @@
-import kaplay from "kaplay";
-import "kaplay/global";
+import k from "./config.js";
+import { gameScene } from "./scenes/gameScene.js";
 
-const k = kaplay()
-
-k.loadSprite("bean", "sprites/bean.png")
-
-k.add([
-	k.pos(120, 80),
-	k.sprite("bean"),
-])
-
-k.onClick(() => k.addKaboom(k.mousePos()))
+k.go("game"); // Inicia a cena do jogo
