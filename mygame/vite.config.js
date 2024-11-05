@@ -1,7 +1,8 @@
-import { defineConfig } from "vite";
+// vite.config.js
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-    build: {
-        sourcemap: true,
-    },
+  build: {
+    outDir: 'dist',
+  },
 });
