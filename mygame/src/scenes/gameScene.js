@@ -62,7 +62,7 @@ k.onButtonRelease("jump", () => {
 // Adiciona plataformas ao jogo
 k.add([
     k.rect(400, 20),
-    k.pos(50, 300),
+    k.pos(50, 350),
     k.body({ isStatic: true }),
     k.color(0.5, 0.5, 0.5),
     k.area(),
