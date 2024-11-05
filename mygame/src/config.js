@@ -8,21 +8,43 @@ const k = kaplay({
             keyboard: ["space", "up", "w"],
             keyboardCode: "Space",
             gamepad: ["south"],
-            touch: "jump",  // Identificador de toque
+            touch: "jump",  // Identificador de toque para pular
         },
         runRight: {
             keyboard: ["right", "d"],
-            touch: "right",  // Identificador de toque
+            touch: "right",  // Identificador de toque para correr à direita
         },
         runLeft: {
             keyboard: ["left", "a"],
-            touch: "left",  // Identificador de toque
+            touch: "left",  // Identificador de toque para correr à esquerda
         },
         reset: {
             keyboard: ["r"],
-            touch: "reset",  // Identificador de toque
+            touch: "reset",  // Identificador de toque para reiniciar
         },
     },
+    
+    // Configurações para input touch
+    touchControls: {
+        jump: { x: 50, y: 50, width: 80, height: 80 }, // Botão de pulo
+        runRight: { x: 130, y: 50, width: 80, height: 80 }, // Botão para correr à direita
+        runLeft: { x: 10, y: 50, width: 80, height: 80 }, // Botão para correr à esquerda
+        reset: { x: 50, y: 150, width: 80, height: 80 }, // Botão para reiniciar
+    }
+});
+
+// Função para lidar com eventos de toque
+k.on('touch', (button) => {
+    if (button === 'jump') {
+        // Lógica para pular
+    } else if (button === 'right') {
+        // Lógica para correr à direita
+    } else if (button === 'left') {
+        // Lógica para correr à esquerda
+    } else if (button === 'reset') {
+        // Lógica para reiniciar o jogo
+    }
+});
     
     // Configurações para input touch
     touchControls: {
