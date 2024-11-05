@@ -2,6 +2,48 @@
 <html>
 <head>
     <title>mygame</title>
+    <style>  
+    #controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow touch events to pass through to the canvas */
+}
+
+.control-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent for visual clarity */
+    color: white;
+    border: none;
+    border-radius: 40px; /* Circle buttons */
+    pointer-events: auto; /* Enable clicking/touching the button itself */
+    font-size: 18px;
+}
+
+#jump {
+    left: 50px;
+    bottom: 100px;
+}
+
+#runRight {
+    left: 130px;
+    bottom: 100px;
+}
+
+#runLeft {
+    left: 10px;
+    bottom: 100px;
+}
+
+#reset {
+    left: 50px;
+    bottom: 200px;
+}
+     </style>
 </head>
 <body style="overflow:hidden">
     <div id="controls">
