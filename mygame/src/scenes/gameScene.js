@@ -64,7 +64,7 @@ k.add([
     k.rect(400, 20),
     k.pos(50, 350),
     k.body({ isStatic: true }),
-    k.color(0.5, 0.5, 0.5),
+    k.color(5, 5, 5),
     k.area(),
 ]);
 
