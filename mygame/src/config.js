@@ -2,7 +2,7 @@ import kaplay from "kaplay";
 
 const k = kaplay({
     global: false,
-    scale: 1,
+    scale: 2,
     buttons: {
         jump: {
             keyboard: ["space", "up", "w"],
@@ -19,7 +19,9 @@ const k = kaplay({
             keyboard: ["r"],
         },
     },
-    
+    width: 500,
+    height: 340,
+    letterbox: true,
 });
 
 export default k;
