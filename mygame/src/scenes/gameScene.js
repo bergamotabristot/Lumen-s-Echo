@@ -133,7 +133,7 @@ k.onButtonRelease("jump", () => {
 });
 
 k.add([
-    k.rect(400, 20),
+    k.rect(4000, 20),
     k.pos(50, 300),
     k.body({ isStatic: true }),
     k.color(5, 5, 5),
