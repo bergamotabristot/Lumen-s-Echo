@@ -34,7 +34,7 @@ export function createPlayer() {
     const player = k.add([
         k.sprite(spriteAtual),
         k.area({ shape: new k.Rect(k.vec2(14, 7), 11, 20) }),
-        k.pos(100, 100),
+        k.pos(60, 700),
         k.body(),
     ]);
 
@@ -108,3 +108,4 @@ export function createPlayer() {
 
     return player;
 }
+
